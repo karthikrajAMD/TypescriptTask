@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">TO DO...</div>
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="searchContent">
+        <input
+          type="search"
+          name="searchContent"
+          id="searchContent"
+          placeholder="search..."
+          onkeyup="search()"
+        />
+        <!-- <button class="add" onclick="search()">search</button> -->
+      </div>
+      <div class="content">
+        <div class="input_box">
+          <input
+            type="text"
+            name="task_name"
+            class="task_name"
+            id="ToDo"
+            placeholder="Task Name"
+          />
+          <button class="add" onclick="add()">Add</button>
+        </div>
+        <div class="list">
+          <!-- <div class="list-item">
+            <input type="checkbox" name="completed" class="completed" />
+            <input type="text" name="task_name" class="task_name" />
+            <select name="my_option" class="my_option">
+              <option value="todo">To do</option>
+              <option value="progress">Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+            <button class="close">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
